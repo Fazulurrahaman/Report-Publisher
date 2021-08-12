@@ -1,4 +1,4 @@
-package com.demo.ExcelProject;
+package com.demo.ExcelProject.sender;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class MailSender {
 }
 
 	private void startOperation() {
-		System.out.println("------------------\n-----------"+"Preparing to send email");
+		System.out.println("Preparing to send email");
 		
 		Iterator<Student> iter = this.studentsDetails.iterator();
 		while (iter.hasNext()) {

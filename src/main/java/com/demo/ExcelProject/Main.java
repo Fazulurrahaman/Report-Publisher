@@ -2,9 +2,10 @@ package com.demo.ExcelProject;
 
 import java.io.IOException;
 import java.util.Set;
-import com.demo.ExcelProject.MailSender;
-import com.demo.ExcelProject.SMSSender;
-public class Appjava {
+
+import com.demo.ExcelProject.sender.MailSender;
+import com.demo.ExcelProject.sender.SMSSender;
+public class Main {
 
 	public static void main(String[] args) throws IOException {
 		ExcelCreator excelcreator = new ExcelCreator();
@@ -16,7 +17,9 @@ public class Appjava {
 		MailSender mailSender = new MailSender();
 		mailSender.sendMail(studentEntries);
 		
-		ExcelCreator.print(studentEntries);
+//		ExcelCreator.print(studentEntries);
+		
+		smsSender.checkBalance();
 	}
 
 }

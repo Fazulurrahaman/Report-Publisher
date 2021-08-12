@@ -1,6 +1,8 @@
-package com.demo.ExcelProject;
+package com.demo.ExcelProject.sender;
 
-public class MessageBody {
+import com.demo.ExcelProject.Student;
+
+class MessageBody {
 	   
 		public static String getEmailBody(Student s) {
 			String result = s.getPassed().equals("YES") ? "PASSED " : "FAILED";
